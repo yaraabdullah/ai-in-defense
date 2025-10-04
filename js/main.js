@@ -1,11 +1,13 @@
 // Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
+    const navSection = document.querySelector('.nav-section');
+    const navCta = document.querySelector('.nav-cta');
     
-    if (navToggle && navLinks) {
+    if (navToggle && navSection) {
         navToggle.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
+            navSection.classList.toggle('active');
+            navCta.classList.toggle('active');
             navToggle.classList.toggle('active');
         });
     }
