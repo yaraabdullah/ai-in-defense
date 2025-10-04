@@ -1,0 +1,667 @@
+/* Limitations specific styles */
+
+/* Page Header */
+.page-header {
+    padding: 6rem 0 2rem;
+    background: var(--dark-slate);
+    margin-top: 80px;
+}
+
+.breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.breadcrumb a {
+    color: var(--accent-green);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* Risk Summary */
+.risk-summary {
+    padding: 4rem 0;
+    background: var(--medium-slate);
+}
+
+.summary-box {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--dark-slate);
+    padding: 3rem;
+    border-radius: 12px;
+    border-left: 6px solid var(--primary-green);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.summary-box h2 {
+    margin-bottom: 2rem;
+    color: var(--accent-green);
+    font-size: 2rem;
+}
+
+.summary-box > p {
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.risk-levels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.risk-level {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(47, 122, 58, 0.3);
+}
+
+.risk-indicator {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.risk-level.high .risk-indicator {
+    background: #dc2626;
+    color: white;
+}
+
+.risk-level.medium .risk-indicator {
+    background: #ea580c;
+    color: white;
+}
+
+.risk-level.low .risk-indicator {
+    background: var(--primary-green);
+    color: white;
+}
+
+.risk-level h4 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+}
+
+.risk-level p {
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Risk Categories */
+.risk-categories {
+    padding: 4rem 0;
+    background: var(--dark-slate);
+}
+
+.risk-category {
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+    background: var(--medium-slate);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.risk-header {
+    padding: 2rem 2.5rem;
+    background: linear-gradient(135deg, var(--dark-slate), var(--medium-slate));
+    border-bottom: 1px solid rgba(47, 122, 58, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.risk-icon {
+    flex-shrink: 0;
+}
+
+.risk-icon svg {
+    width: 48px;
+    height: 48px;
+}
+
+.risk-header h2 {
+    flex: 1;
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.8rem;
+}
+
+.risk-severity {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.risk-severity.high {
+    background: rgba(220, 38, 38, 0.2);
+    color: #fca5a5;
+    border: 1px solid #dc2626;
+}
+
+.risk-severity.critical {
+    background: rgba(185, 28, 28, 0.3);
+    color: #f87171;
+    border: 1px solid #b91c1c;
+}
+
+.risk-severity.medium {
+    background: rgba(245, 158, 11, 0.2);
+    color: #fbbf24;
+    border: 1px solid #f59e0b;
+}
+
+.risk-content {
+    padding: 2.5rem;
+}
+
+.risk-description {
+    margin-bottom: 3rem;
+}
+
+.risk-description h3 {
+    color: var(--accent-green);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.risk-description p {
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.risk-impacts,
+.mitigation-strategies,
+.attack-vectors,
+.defensive-measures,
+.ethical-principles,
+.governance-framework,
+.dependency-analysis,
+.sovereignty-strategy,
+.integration-challenges,
+.integration-strategy {
+    margin-bottom: 3rem;
+}
+
+.risk-impacts h3,
+.mitigation-strategies h3,
+.attack-vectors h3,
+.defensive-measures h3,
+.ethical-principles h3,
+.governance-framework h3,
+.dependency-analysis h3,
+.sovereignty-strategy h3,
+.integration-challenges h3,
+.integration-strategy h3 {
+    color: var(--accent-green);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.risk-impacts ul {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.risk-impacts li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.risk-impacts strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Strategy Grid */
+.strategy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.strategy-item {
+    background: rgba(47, 122, 58, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(47, 122, 58, 0.2);
+}
+
+.strategy-item h4 {
+    color: var(--accent-green);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.strategy-item p {
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Attack Vectors */
+.vector-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.vector-item {
+    background: rgba(234, 88, 12, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(234, 88, 12, 0.2);
+}
+
+.vector-item h4 {
+    color: #fb923c;
+    margin-bottom: 1rem;
+    font counter: bold;
+}
+
+.vector-item p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.vector-example {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.vector-example strong {
+    color: #fb923c;
+}
+
+/* Prevention Checklist */
+.prevention-checklist h4 {
+    color: var(--accent-green);
+    margin-bottom: 1.5rem;
+}
+
+.checklist {
+    list-style: none;
+    padding: 0;
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.checklist li {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    break-inside: avoid;
+    position: relative;
+    padding-left: 0;
+}
+
+.checklist li::before {
+    content: "✓";
+    color: var(--primary-green);
+    font-weight: bold;
+    margin-right: 0.75rem;
+}
+
+/* Ethical Principles */
+.principle-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.principle-card {
+    background: rgba(5, 150, 105, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(5, 150, 105, 0.2);
+}
+
+.principle-card h4 {
+    color: #6ee7b7;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.principle-card p {
+    line-height: 1.5;
+}
+
+/* Governance Framework */
+.governance-structure {
+    margin-top: 1.5rem;
+}
+
+.governance-level {
+    background: rgba(47, 122, 58, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-green);
+    margin-bottom: 1.5rem;
+}
+
+.governance-level h4 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.governance-level p {
+    line-height: 1.5;
+}
+
+/* Dependency Analysis */
+.dependency-list {
+    margin-top: 1.5rem;
+}
+
+.dependency-item {
+    background: rgba(220, 38, 38, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #dc2626;
+    margin-bottom: 1.5rem;
+}
+
+.dependency-item h4 {
+    color: #fca5a5;
+    margin-bottom: 1rem;
+}
+
+.dependency-item p {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.dependency-item strong {
+    color: var(--text-secondary);
+}
+
+/* Risk Timeline */
+.risk-timeline {
+    background: rgba(124, 58, 237, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.risk-timeline h3 {
+    color: #c4b5fd;
+    margin-bottom: 1.5rem;
+}
+
+.risk-timeline p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.risk-timeline strong {
+    color: #c4b5fd;
+}
+
+/* Strategy Timeline */
+.strategy-timeline {
+    margin-top: 1.5rem;
+}
+
+.timeline-item {
+    background: rgba(47, 122, 58, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-green);
+    margin-bottom: 1.5rem;
+}
+
+.timeline-phase {
+    color: var(--accent-green);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.timeline-content ul {
+    margin: 1rem 0 0;
+    padding-left: 1.5rem;
+}
+
+.timeline-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Challenge Cards */
+.challenge-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.challenge-card {
+    background: rgba(124, 58, 237, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.challenge-card h4 {
+    color: #c4b5fd;
+    margin-bottom: 1rem;
+}
+
+.challenge-card p {
+    line-height: 1.5;
+}
+
+/* Policy Recommendations */
+.policy-recommendations {
+    padding: 4rem 0;
+    background: var(--medium-slate);
+    border-top: 1px solid rgba(47, 122, 58, 0.3);
+}
+
+.policy-recommendations h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--accent-green);
+    font-size: 2.2rem;
+}
+
+.recommendation-categories {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.recommendation-category {
+    background: var(--dark-slate);
+    padding: 2.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(47, 122, 58, 0.3);
+}
+
+.recommendation-category h3 {
+    color: var(--accent-green);
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+.action-items {
+    display: grid;
+    gap: 1rem;
+}
+
+.action-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: rgba(47, 122, 58, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(47, 122, 58, 0.2);
+    transition: all 0.3s ease;
+}
+
+.action-item:hover {
+    background: rgba(47, 122, 58, 0.1);
+    border-color: var(--accent-green);
+}
+
+.action-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary-green);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.action-item label {
+    flex: 1;
+    line-height: 1.5;
+    cursor: pointer;
+    user-select: none;
+}
+
+.action-item input[type="checkbox"]:checked + label {
+    color: var(--text-primary);
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Risk Monitoring */
+.risk-monitoring {
+    margin-top: 4rem;
+    background: var(--dark-slate);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(47, 122, 58, 0.3);
+}
+
+.risk-monitoring h3 {
+    color: var(--accent-green);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.risk-monitoring p {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.monitoring-criteria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.criteria-section {
+    background: rgba(47, 122, 58, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(47, 122, 58, 0.2);
+}
+
+.criteria-section h4 {
+    color: var(--accent-green);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.criteria-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.criteria-section li {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.criteria-section li::before {
+    content: "→";
+    color: var(--accent-green);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 4rem 0 1.5rem;
+        margin-top: 60px;
+    }
+    
+    .summary-box {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+    
+    .risk-levels {
+        grid-template-columns: 1fr;
+    }
+    
+    .risk-header {
+        padding: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .risk-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .risk-content {
+        padding: 1.5rem;
+    }
+    
+    .strategy-grid,
+    .vector-grid,
+    .principle-cards,
+    .challenge-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .checklist {
+        column-count: 1;
+    }
+    
+    .recommendation-category {
+        padding: 2rem;
+        margin: 0 1rem 2rem;
+    }
+    
+   
+            
+.monitoring-criteria {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.action-item {
+    padding: 1rem;
+}

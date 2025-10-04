@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI in Defense — Saudi Insights | Use Cases & Capabilities</title>
+    <meta name="description" content="Detailed examination of AI-powered defense capabilities including border surveillance, cyber defense, autonomous systems, and operational decision support.">
+    
+    <!-- Open Graph / LinkedIn -->
+    <meta property="og:title" content="AI in Defense — Saudi Insights | Use Cases & Capabilities">
+    <meta property="og:description" content="Detailed examination of AI-powered defense capabilities including border surveillance, cyber defense, autonomous systems, and operational decision support.">
+    <meta property="og:image" content="./assets/og-image.jpg">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/use-cases.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">AI in Defense — Saudi Insights</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="essay.html">Flagship Essay</a></li>
+                <li><a href="use-cases.html" class="active">Use Cases</a></li>
+                <li><a href="limitations.html">Limitations & Risks</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / Use Cases & Capabilities
+                </div>
+                <h1>AI Capabilities in Defense</h1>
+                <p class="page-subtitle">Operational Analysis of Proven AI Applications Across Six Critical Defense Functions</p>
+            </div>
+        </section>
+
+        <!-- Capabilities Overview -->
+        <section class="capabilities-overview">
+            <div class="container">
+                <div class="overview-text">
+                    <h2>Strategic Assessment</h2>
+                    <p>The following analysis examines six AI capabilities that have demonstrated operational effectiveness in defense contexts. Each capability represents proven technologies with documented performance metrics and implementation pathways suitable for Saudi Arabia's security requirements.</p>
+                    <p>Assessment criteria include technical feasibility, operational impact, resource requirements, and alignment with national defense priorities. Capabilities are ranked by immediate implementation potential and strategic value.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities Grid -->
+        <section class="capabilities-section">
+            <div class="container">
+                <div class="capabilities-grid">
+                    
+                    <!-- Border & Maritime ISR -->
+                    <div class="capability-card" data-capability="isr">
+                        <div class="capability-header">
+                            <div class="capability-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="20" r="16" stroke="#0F5520" stroke-width="2" fill="none"/>
+                                    <path d="M32 36V56M24 48H40" stroke="#0F5520" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M8 56C8 44 18 52 28 52S48 44 56 44" stroke="#0F5520" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3>Border & Maritime ISR</h3>
+                            <div class="capability-score">Strategic Priority: <span class="score-high">High</span></div>
+                        </div>
+                        <div class="capability-summary">
+                            <p>Intelligence, Surveillance, and Reconnaissance (ISR) capabilities enhanced with AI for automated target detection, pattern analysis, and threat assessment across Saudi Arabia's extensive borders and coastline.</p>
+                            <div class="capability-metrics">
+                                <span class="metric">97% Detection Accuracy</span>
+                                <span class="metric">15x Processing Speed</span>
+                                <span class="metric">24/7 Operations</span>
+                            </div>
+                            <button class="expand-button" onclick="toggleCapability('isr')">Detailed Analysis →</button>
+                        </div>
+                        
+                        <div class="capability-details" id="isr-details">
+                            <div class="detail-section">
+                                <h4>Operational Problem</h4>
+                                <p>Saudi Arabia's border security requires continuous monitoring of 4,400km of land borders and 2,640km of coastline. Traditional surveillance methods are resource-intensive, limited by human operator fatigue, and unable to process vast amounts of sensor data in real-time.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>AI Approach</h4>
+                                <p>Computer vision algorithms process thermal imagery, radar data, and visual feeds from border surveillance cameras and UAVs. Machine learning models identify human movement patterns, vehicle signatures, and suspicious activities across diverse terrain types.</p>
+                                <ul>
+                                    <li><strong>Multi-spectral Fusion:</strong> Combines visual, thermal, and radar data for comprehensive threat detection</li>
+                                    <li><strong>Adaptive Algorithms:</strong> Systems learn from operational environments and improve accuracy over time</li>
+                                    <li><strong>Edge Processing:</strong> On-device AI reduces latency and eliminates dependence on network connectivity</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Data & Sensors</h4>
+                                <p>Training data includes labeled imagery from operational environments representing different seasons, weather conditions, and terrain types. Sensor integration includes:</p>
+                                <ul>
+                                    <li>Thermal imaging cameras (uncooled and cooled)</li>
+                                    <li>Ground surveillance radar (motion detection)</li>
+                                    <li>UAV-mounted cameras and sensors</li>
+                                    <li>Fiber optic perimeter systems</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Expected Outcomes</h4>
+                                <p>Implementation reduces operational costs by 60% while improving threat detection rates and response times. Automated systems operate continuously without fatigue, providing consistent surveillance coverage.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Key Performance Indicators</h4>
+                                <div class="kpi-grid">
+                                    <div class="kpi-item">
+                                        <span class="kpi-metric">97%</span>
+                                        <span class="kpi-label">Detection Accuracy</span>
+                                    </div>
+                                    <div class="kpi-item">
+                                        <span class="kpi-metric">&lt;2min</span>
+                                        <span class="kpi-label">Alert Response Time</span>
+                                    </div>
+                                    <div class="kpi-item">
+                                        <span class="kpi-metric">15x</span>
+                                        <span class="kpi-label">Data Processing Speed</span>
+                                    </div>
+                                    <div class="kpi-item">
+                                        <span class="kpi-metric">60%</span>
+                                        <span class="kpi-label">Cost Reduction</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Risk Considerations</h4>
+                                <p>Environmental conditions such as sandstorms can temporarily reduce accuracy. Adversarial attacks targeting AI systems require robust security protocols. False positive rates must be managed to maintain operational efficiency.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Counter-UAS -->
+                    <div class="capability-card" data-capability="counter-uas">
+                        <div class="capability-header">
+                            <div class="capability-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="32" cy="32" rx="28" ry="16" stroke="#0F5520" stroke-width="2" fill="none"/>
+                                    <path d="M8 32H56M4 16H12M4 48H12M52 16H60M52 48H60" stroke="#0F5520" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="32" cy="32" r="4" fill="#0F5520"/>
+                                </svg>
+                            </div>
+                            <h3>Counter-UAS Operations</h3>
+                            <div class="capability-score">Strategic Priority: <span class="score-high">High</span></div>
+                        </div>
+                        <div class="capability-summary">
+                            <p>AI-powered detection, classification, and neutralization of unmanned aerial threats targeting critical infrastructure, military installations, and populated areas.</p>
+                            <div class="capability-metrics">
+                                <span class="metric">94% Classification Accuracy</span>
+                                <span class="metric">&lt;1s Response Time</span>
+                                <span class="metric">Multi-threat Capability</span>
+                            </div>
+                            <button class="expand-button" onclick="toggleCapability('counter-uas')">Detailed Analysis →</button>
+                        </div>
+                        
+                        <div class="capability-details" id="counter-uas-details">
+                            <div class="detail-section">
+                                <h4>Operational Problem</h4>
+                                <p>The proliferation of commercial drones presents asymmetric threats to airspace security. Traditional air defense systems struggle to detect and engage small, low-altitude aircraft that may carry explosives or conduct surveillance operations.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>AI Approach</h4>
+                                <p>Machine learning algorithms analyze radar signatures, acoustic patterns, and visual characteristics to distinguish between hostile drones, commercial aircraft, and birds. Automated engagement decisions based on threat assessment and rules of engagement.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Data & Sensors</h4>
+                                <ul>
+                                    <li>Ground-based radar systems optimized for small aircraft detection</li>
+                                    <li>Electro-optical/infrared sensors for visual identification</li>
+                                    <li>Acoustic detection arrays</li>
+                                    <li>Electronic warfare sensors for command and control interference</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Expected Outcomes</h4>
+                                <p>Automated threat classification enables autonomous defensive responses while reducing human operator workload. Systems can engage multiple simultaneous threats with millisecond response times.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Key Performance Indicators</h4>
+                                <div class="kpi-grid">
+                                    <div class="kpi-item">
+                                        <span class="kpi-metric">94%</span>
+                                        <span class="kpi-label">Classification Accuracy</span>
+                                    </div>
+                                    <div class="kpi-item">
+                                        <span class="kpi-metric">&lt;1s</span>
+                                        <span class="kpi-label">Detection to Engagement</span>
+                                    </div>
+                                    <div class="kpi-item">
+                                        <span class="kpi-metric">8+</span>
+                                        <span class="kpi-label">Simultaneous Tracks</span>
+                                    </div>
+                                    <div class="kpi-item">
+                                        <span class="kpi-metric">99.8%</span>
+                                        <span class="kpi-label">System Availability</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Risk Considerations</h4>
+                                <p>System malfunction risk requires failsafe mechanisms. Ethical considerations include engagement policies for non-military threats and protection of civilian aircraft.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cyber Defense -->
+                    <div class="capability-card" data-capability="cyber">
+                        <div class="capability-header">
+                            <div class="capability-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="12" y="8" width="40" height="48" rx="4" stroke="#0F5520" stroke-width="2" fill="none"/>
+                                    <rect x="20" y="20" width="24" height="24" rx="2" fill="none" stroke="#0F5520" stroke-width="2"/>
+                                    <circle cx="28" cy="28" r="2" fill="#0F5520"/>
+                                    <path d="M32 44H40M24 44H28" stroke="#0F5520" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3>Cyber Defense Integration</h3>
+                            <div class="capability-score">Strategic Priority: <span class="score-medium">Medium-High</span></div>
+                        </div>
+                        <div class="capability-summary">
+                            <p>AI-enhanced cybersecurity provides automated threat detection, incident response, and network protection for military communications, critical infrastructure, and information systems.</p>
+                            <div class="capability-metrics">
+                                <span class="metric">&lt;2hr Dwell Time</span>
+                                <span class="metric">Real-time Monitoring</span>
+                                <span class="metric">Automated Response</span>
+                            </div>
+                            <button class="expand-button" onclick="toggleCapability('cyber')">Detailed Analysis →</button>
+                        </div>
+                        
+                        <div class="capability-details" id="cyber-details">
+                            <div class="detail-section">
+                                <h4>Operational Problem</h4>
+                                <p>Cyber threats against military networks require continuous monitoring and rapid response capabilities that exceed human operator capacity. Traditional signature-based defenses fail to detect novel attack vectors and zero-day exploits.</p>
+                            </div>
+                  
+                            <div class="detail-section">
+                                <h4>AI Approach</h4>
+                                <p>Behavioral analysis algorithms identify anomalous network traffic patterns, user activities, and system behaviors that indicate potential intrusions. Automated response systems implement defensive measures while preserving operational continuity.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Data & Sensors</h4>
+                                <ul>
+                                    <li>Network traffic monitoring sensors (SIEM integration)</li>
+                                    <li>Endpoint detection and response (EDR) systems</li>
+                                    <li>Cloud security monitoring platforms</li>
+                                    <li>Threat intelligence feeds and databases</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Expected Outcomes</h4>
+                                <p>AI-driven cyber defense reduces attacker dwell time from weeks to hours, enabling rapid containment and remediation of security incidents while minimizing operational disruption.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Key Performance Indicators</h4>
+                                <div class="kpi-grid">
+                                    <div class="kpi-item">
+                                        <span class="kpi-metric">&lt;2hr</span>
+                                        <span class="kpi-label">Attack Dwell Time</span>
+                                    >
+                                    <div class="kpi-item">
+                                        <span class="kpi-metric">98%</span>
+                                        <span class="kpi-label">Detection Rate</span>
+                                    </div>
+                                    <div class="kpi-item">
+                                        <span class="kpi-metric">&lt;15min</span>
+                                        <span class="kpi-label">Response Time</span>
+                                    </div>
+                                    <div class="kpi-item">
+                                        <span class="kpi-metric">95%</span>
+                                        <span class="kpi-label">False Positive Rate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Risk Considerations</h4>
+                                <p>AI systems themselves become targets for adversarial attacks. Over-reliance on automation requires backup manual procedures and human oversight for critical decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Predictive Maintenance -->
+                    <div class="capability-card" data-capability="maintenance">
+                        <div class="capability-header">
+                            <div class="capability-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="12" y="20" width="40" height="30" rx="4" stroke="#0F5520" stroke-width="2" fill="none"/>
+                                    <path d="M20 20V8H44V20M24 36H32M36 36H40" stroke="#0F5520" stroke-width="2" stroke-linecap="round"/>
+                                    <rect x="28" y="44" width="8" height="12" rx="2" fill="#0F5520"/>
+                                </svg>
+                            </div>
+                            <h3>Predictive Maintenance</h3>
+                            <div class="capability-score">Strategic Priority: <span class="score-medium">Medium</span></div>
+                        </div>
+                        <div class="capability-summary">
+                            <p>AI-powered analysis of equipment sensor data predicts maintenance requirements, reduces operational disruption, and optimizes defense asset availability.</p>
+                            <div class="capability-metrics">
+                                <span class="metric">85% Uptime Improvement</span>
+                                <span class="metric">40% Cost Reduction</span>
+                                <span class="metric">Predictive Accuracy 92%</span>
+                            </div>
+                            <button class="expand-button" onclick="toggleCapability('maintenance')">Detailed Analysis →</button>
+                        </div>
+                        
+                        <div class="capability-details" id="maintenance-details">
+                            <div class="detail-section">
+                                <h4>Operational Problem</h4>
+                                <p>Military equipment maintenance traditionally follows schedule-based approaches that may result in premature component replacement or unexpected failures during operations. Defense assets require optimal availability while controlling maintenance costs.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>AI Approach</h4>
+                                <p>Machine learning models analyze vibration, temperature, pressure, and performance data from military equipment to identify patterns indicating component degradation. Predictive algorithms forecast maintenance needs before failures occur.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Implementation Benefits</h4>
+                                <p>Saudi Arabia's defense modernization requires reliable equipment availability. Predictive maintenance reduces unexpected failures while optimizing maintenance schedules for maximum operational readiness.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Decision Support -->
+                    <div class="capability-card" data-capability="decision">
+                        <div class="capability-header">
+                            <div class="capability-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 8L48 16L40 32L32 40L24 32L16 16z" stroke="#0F5520" stroke-width="2" fill="none"/>
+                                    <circle cx="32" cy="20" r="4" fill="#0F5520"/>
+                                    <path d="M32 24V40M24 32H40" stroke="#0F5520" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3>Decision Support Systems</h3>
+                            <div class="capability-score">Strategic Priority: <span class="score-medium">Medium</span></div>
+                        </div>
+                        <div class="capability-summary">
+                            <p>AI-enhanced decision support systems analyze situational data to provide commanders with real-time analysis, threat assessment, and strategic recommendations during operations.</p>
+                            <div class="capability-metrics">
+                                <span class="metric">Real-time Analysis</span>
+                                <span class="metric">Multi-source Fusion</span>
+                                <span class="metric">Scenario Planning</span>
+                            </div>
+                            <button class="expand-button" onclick="toggleCapability('decision')">Detailed Analysis →</button>
+                        </div>
+                        
+                        <div class="capability-details" id="decision-details">
+                            <div class="detail-section">
+                                <h4>Operational Problem</h4>
+                                <p>Military commanders face information overload from multiple sensors, intelligence sources, and operational reports. Decision-making requires rapid analysis of complex situations with potentially limited time for human processing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arabic NLP -->
+                    <div class="capability-card" data-capability="nlp">
+                        <div class="capability-header">
+                            <div class="capability-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="16" y="12" width="32" height="8" rx="4" stroke="#0F5520" stroke-width="2" fill="none"/>
+                                    <rect x="16" y="24" width="24" height="8" rx="4" stroke="#0F5520" stroke-width="2" fill="none"/>
+                                    <rect x="16" y="36" width="28" height="8" rx="4" stroke="#0F5520" stroke-width="2" fill="none"/>
+                                    <rect x="16" y="48" width="20" height="8" rx="4" stroke="#0F5520" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <h3>Arabic Language Processing</h3>
+                            <div class="capability-score">Strategic Priority: <span class="score-high">High</span></div>
+                        </div>
+                        <div class="capability-summary">
+                            <p>Specialized natural language processing for Arabic text enables automated translation, sentiment analysis, and content classification of regional communications and media.</p>
+                            <div class="capability-metrics">
+                                <span class="metric">95% Translation Accuracy</span>
+                                <span class="metric">Real-time Processing</span>
+                                <span class="metric">Multi-dialect Support</span>
+                            </div>
+                            <button class="expand-button" onclick="toggleCapability('nlp')">Detailed Analysis →</button>
+                        </div>
+                        
+                        <div class="capability-details" id="nlp-details">
+                            <div class="detail-section">
+                                <h4>Operational Problem</h4>
+                                <p>Intelligence analysis requires processing Arabic communications, social media content, and regional media sources. Manual translation and analysis cannot scale with increasing data volumes and requires specialized linguistic expertise.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>AI Approach</h4>
+                                <p>Large language models trained on Arabic text enable accurate translation, sentiment analysis, topic classification, and entity recognition across different Arabic dialects and usage contexts.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Strategic Importance</h4>
+                                <p>Arabic NLP capabilities support Saudi Arabia's regional intelligence requirements and enhance cooperation with Arab League partners. Sovereign language processing reduces dependence on foreign technology providers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Roadmap -->
+        <section class="implementation-roadmap">
+            <div class="container">
+                <h2>Implementation Roadmap</h2>
+                <div class="roadmap-timeline">
+                    <div class="timeline-phase">
+                        <div class="phase-header">
+                            <h3>Phase 1: Foundation (2024-2025)</h3>
+                            <div class="phase-duration">12-18 months</div>
+                        </div>
+                        <div class="phase-content">
+                            <p>Establish infrastructure, develop core AI capabilities, and launch pilot programs for Border ISR and Counter-UAS systems.</p>
+                            <ul>
+                                <li>AI Defense Laboratory establishment</li>
+                                <li>Data collection and preparation initiatives</li>
+                                <li>Personnel training and development programs</li>
+                                <li>Pilot installations at key border locations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-phase">
+                        <div class="phase-header">
+                            <h3>Phase 2: Expansion (2025-2027)</h3>
+                            <div class="phase-duration">24 months</div>
+                        </div>
+                        <div class="phase-content">
+                            <p>Full deployment of proven capabilities, integration with existing systems, and development of specialized applications.</p>
+                            <ul>
+                                <li>Complete border surveillance network rollout</li>
+                                <li>Cyber defense system integration</li>
+                                <li>Arabic NLP capability development</li>
+                                <li>Regional partnership establishment</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-phase">
+                        <div class="phase-header">
+                            <h3>Phase 3: Innovation (2027-2030)</h3>
+                            <div class="phase-duration">36 months</div>
+                        </div>
+                        <div class="phase-content">
+                            <p>Advanced AI applications, sovereign capability development, and regional leadership positioning.</p>
+                            <ul>
+                                <li>Autonomous system integration</li>
+                                <li>Next-generation AI development</li>
+                                <li>Regional technology leadership</li>
+                                <li>Export capability development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:research@ai-defense-saudi.org">research@ai-defense-saudi.org</a></p>
+                    <p>LinkedIn: <a href="#" target="_blank">LinkedIn Profile</a></p>
+                </div>
+                <div class="footer-legal">
+                    <p><strong>Disclaimer:</strong> This independent research resource provides analytical content for educational purposes. We do not provide weaponization services and do not accept classified material via public channels. All opinions expressed are those of the authors and do not represent official positions.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI in Defense — Saudi Insights. Independent Research Resource.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/use-cases.js"></script>
+>
+</body>
+</html>

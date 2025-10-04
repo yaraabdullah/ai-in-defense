@@ -1,0 +1,54 @@
+# Git ignore file for AI in Defense website
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependencies (if using Node.js in future)
+node_modules/
+npm-error.log
+yarn-error.log
+
+# Build Output (if using build tools in future)
+dist/
+build/
+out/
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+
+# Backup Files
+*.bak
+*.backup
+
+# Specific to this project
+# Comment out the next line if you want to include placeholder assets
+assets/placeholder.txt

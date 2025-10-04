@@ -1,0 +1,369 @@
+/* Use Cases specific styles */
+
+/* Page Header */
+.page-header {
+    padding: 6rem 0 2rem;
+    background: var(--dark-slate);
+    margin-top: 80px;
+}
+
+.breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.breadcrumb a {
+    color: var(--accent-green);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* Capabilities Overview */
+.capabilities-overview {
+    padding: 3rem 0;
+    background: var(--medium-slate);
+}
+
+.overview-text {
+    max-width: 70ch;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.overview-text h2 {
+    margin-bottom: 2rem;
+    color: var(--accent-green);
+}
+
+.overview-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Capabilities Section */
+.capabilities-section {
+    padding: 4rem 0;
+    background: var(--dark-slate);
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.capability-card {
+    background: var(--medium-slate);
+    border-radius: 12px;
+    border: 1px solid rgba(47, 122, 58, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.capability-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-color: var(--accent-green);
+}
+
+.capability-header {
+    padding: 2rem;
+    border-bottom: 1px solid rgba(47, 122, 58, 0.3);
+}
+
+.capability-icon {
+    margin-bottom: 1.5rem;
+}
+
+.capability-icon svg {
+    width: 64px;
+    height: 64px;
+}
+
+.capability-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.capability-score {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.score-high {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+.score-medium {
+    color: #f59e0b;
+    font-weight: 600;
+}
+
+.capability-summary {
+    padding: 2rem;
+}
+
+.capability-summary p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.capability-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.metric {
+    background: rgba(47, 122, 58, 0.2);
+    color: var(--accent-green);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.expand-button {
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.expand-button:hover {
+    background: var(--secondary-green);
+    transform: translateY(-1px);
+}
+
+.expand-button:active {
+    transform: translateY(0);
+}
+
+/* Capability Details */
+.capability-details {
+    display: none;
+    background: rgba(47, 122, 58, 0.05);
+    border-top: 1px solid rgba(47, 122, 58, 0.3);
+}
+
+.capability-details.show {
+    display: block;
+    animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+        padding: 0 2rem;
+    }
+    to {
+        opacity: 1;
+        max-height: 2000px;
+        padding: 2rem;
+    }
+}
+
+.detail-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(47, 122, 58, 0.2);
+}
+
+.detail-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.detail-section h4 {
+    color: var(--accent-green);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.detail-section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.detail-section ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.detail-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.detail-section strong {
+    color: var(--accent-green);
+}
+
+/* KPI Grid */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.kpi-item {
+    text-align: center;
+    background: var(--dark-slate);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(47, 122, 58, 0.3);
+}
+
+.kpi-metric {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+.kpi-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Implementation Roadmap */
+.implementation-roadmap {
+    padding: 4rem 0;
+    background: var(--medium-slate);
+    border-top: 1px solid rgba(47, 122, 58, 0.3);
+}
+
+.implementation-roadmap h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--accent-green);
+}
+
+.roadmap-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-phase {
+    margin-bottom: 3rem;
+    background: var(--dark-slate);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(47, 122, 58, 0.3);
+}
+
+.phase-header {
+    background: var(--primary-green);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phase-header h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.phase-duration {
+    color: white;
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+.phase-content {
+    padding: 2rem;
+}
+
+.phase-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.phase-content ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.phase-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 4rem 0 1.5rem;
+        margin-top: 60px;
+    }
+    
+    .capabilities-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+```
+
+The capability-card {
+    margin: 0 1rem;
+}
+
+.capability-header {
+    padding: 1.5rem;
+}
+
+.capability-summary {
+    padding: 1.5rem;
+}
+
+.detail-section {
+    padding: 1.5rem;
+}
+
+.kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.timeline-phase {
+    margin: 0 1rem 2rem;
+}
+
+.phase-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.phase-header h3 {
+    font-size: 1.1rem;
+}
+
+.phase-content {
+    padding: 1.5rem;
+}

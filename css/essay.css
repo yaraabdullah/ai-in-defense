@@ -1,0 +1,275 @@
+/* Essay-specific styles */
+
+/* Page Header */
+.page-header {
+    padding: 6rem 0 2rem;
+    background: var(--dark-slate);
+    margin-top: 80px; /* Account for fixed navbar */
+}
+
+.breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.breadcrumb a {
+    color: var(--accent-green);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.essay-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* Executive Summary */
+.executive-summary {
+    padding: 3rem 0;
+    background: var(--medium-slate);
+}
+
+.summary-box {
+    background: var(--dark-slate);
+    padding: 3rem;
+    border-radius: 8px;
+    border-left: 6px solid var(--primary-green);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.summary-box h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--accent-green);
+}
+
+.summary-box p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.key-findings {
+    background: rgba(47, 122, 58, 0.1);
+    padding: 2rem;
+    border-radius: 6px;
+    margin: 2rem 0;
+}
+
+.key-findings h3 {
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    font-size: 1.3rem;
+}
+
+.key-findings li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.key-findings strong {
+    color: var(--accent-green);
+}
+
+.download-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    background: var(--primary-green);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background: var(--secondary-green);
+}
+
+/* Table of Contents */
+.table-of-contents {
+    padding: 2rem 0;
+    background: var(--dark-slate);
+    border-bottom: 1px solid rgba(47, 122, 58, 0.3);
+}
+
+.table-of-contents h3 {
+    margin-bottom: 1.5rem;
+    color: var(--accent-green);
+}
+
+.table-of-contents ol {
+    list-style: none;
+    counter-reset: item;
+}
+
+.table-of-contents li {
+    counter-increment: item;
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.table-of-contents li::before {
+    content: counter(item) ". ";
+    position: absolute;
+    left: 0;
+    color: var(--accent-green);
+    font-weight: 600;
+}
+
+.table-of-contents a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.table-of-contents a:hover {
+    color: var(--accent-green);
+}
+
+/* Essay Content */
+.essay-content {
+    padding: 4rem 0;
+    background: var(--dark-slate);
+}
+
+.essay-container {
+    max-width: 85ch;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.essay-section {
+    margin-bottom: 4rem;
+}
+
+.essay-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-green);
+}
+
+.essay-section h3 {
+    font-size: 1.6rem;
+    margin: 2.5rem 0 1.5rem;
+    color: var(--text-primary);
+}
+
+.essay-section h4 {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem;
+    color: var(--text-primary);
+}
+
+.essay-section p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.essay-section ul, .essay-section ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.essay-section li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.essay-section strong {
+    color: var(--accent-green);
+}
+
+/* Vision 2030 Callout */
+.vision-2030-callout {
+    background: linear-gradient(135deg, rgba(47, 122, 58, 0.1), rgba(47, 122, 58, 0.05));
+    border-left: 6px solid var(--primary-green);
+    padding: 2.5rem;
+    margin: 3rem 0;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.vision-2030-callout h3 {
+    color: var(--primary-green);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.vision-2030-callout ul {
+    margin: 1.5rem 0;
+}
+
+.vision-2030-callout li {
+    margin-bottom: 1rem;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid var(--accent-green);
+    padding-left: 2rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* Technical Appendix */
+.technical-appendix {
+    margin: 4rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(47, 122, 58, 0.3);
+}
+
+.toggle-appendix {
+    background: none;
+    border: 2px solid var(--accent-green);
+    color: var(--accent-green);
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.toggle-appendix:hover {
+    background: var(--accent-green);
+    color: white;
+}
+
+.appendix-content {
+    display: none;
+    padding: 2rem;
+    background: var(--medium-slate);
+    border-radius: 8px;
+    border: 1px solid rgba(47, 122 as per the user's requirement
+</parameter>
+<parameter name="old_calls">[
+    {
+        "command": "continue",
+        "input": "",
+        "messages": []
+    },
+    {
+        "command": "continue", 
+        "input": "",
+        "messages": []
+    }
+]
+
+I'll continue implementing the CSS for the essay page and then move on to creating the remaining pages. Let me complete the CSS file and then continue with the other pages.
+<｜tool▁calls▁begin｜><｜tool▁call▁begin｜>
+search_replace
