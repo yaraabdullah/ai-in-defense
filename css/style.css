@@ -76,16 +76,26 @@ p {
     padding: var(--container-padding);
 }
 
-/* Navigation - Anduril Style */
+/* Navigation - Goal Style with Transparency */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
@@ -102,8 +112,13 @@ p {
     align-items: center;
     gap: 12px;
     padding: 0 24px;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
     height: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.nav-brand:hover {
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .brand-logo {
@@ -142,8 +157,13 @@ p {
     gap: 8px;
     padding: 0 24px;
     height: 100%;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
     position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .nav-item:last-child {
@@ -226,10 +246,12 @@ p {
         top: 100%;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.98);
+        background: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
     
     .nav-section.active .nav-item {
@@ -245,9 +267,11 @@ p {
         top: calc(100% + 200px);
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.98);
+        background: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         border-top: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
     
     .nav-toggle.active span:nth-child(1) {
