@@ -169,7 +169,13 @@ p {
 }
 
 .hero-overlay {
-    Format: Not recognizing CSS change commands, let me implement this differently
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(42, 42, 42, 0.6) 100%);
+    z-index: 2;
 }
 
 /* Continue with the rest of the CSS */
@@ -178,6 +184,7 @@ p {
     z-index: 10;
     max-width: 800px;
     padding: 0 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subhead {

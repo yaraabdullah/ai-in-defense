@@ -53,7 +53,54 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.feature-tile').forEach(tile => {
         tile.style.opacity = '0';
         tile.style.transform = 'translateY(20px)';
-        tile.style транsition = 'opacity 0.6s ease, transform 0.6s ease';
+        tile.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(tile);
+    });
+    
+    // Defense animations interaction
+    const defenseAnimations = document.querySelector('.defense-animations');
+    if (defenseAnimations) {
+        // Add click interaction to neural network
+        const neuralNodes = document.querySelectorAll('.neural-node');
+        neuralNodes.forEach(node => {
+            node.addEventListener('click', function() {
+                this.style.animation = 'nodePulse 0.5s ease-in-out';
+                setTimeout(() => {
+                    this.style.animation = 'nodePulse 2s ease-in-out infinite';
+                }, 500);
+            });
+        });
+        
+        // Add hover effect to drone
+        const drone = document.querySelector('.drone');
+        if (drone) {
+            drone.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.2)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            drone.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        }
+    }
+    
+    // Add performance optimization for animations
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (prefersReducedMotion.matches) {
+        const defenseAnimations = document.querySelector('.defense-animations');
+        if (defenseAnimations) {
+            defenseAnimations.style.display = 'none';
+        }
+    }
+    
+    // Add parallax effect to hero content on scroll
+    window.addEventListener('scroll', function() {
+        const heroContent = document.querySelector('.hero-content');
+        if (heroContent && window.scrollY < window.innerHeight) {
+            const scrolled = window.scrollY;
+            heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
+            heroContent.style.opacity = 1 - (scrolled / 600);
+        }
     });
 });
