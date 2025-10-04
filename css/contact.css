@@ -34,12 +34,58 @@
     background: var(--medium-slate);
 }
 
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     margin-bottom: 3rem;
 }
+
+/* Make grid items stretch to equal height */
+.contact-grid {
+    align-items: stretch; /* ensures grid children fill the same row height */
+  }
+  
+  /* Make both cards column flex containers so inner content can stretch */
+  .contact-card,
+  .contact-form-card,
+  .engagement-card {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Let the form grow to fill the card so both cards match heights */
+  .contact-form {
+    display: flex;           /* override grid so we can use flex-grow */
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1 1 auto;         /* allow form to expand inside the card */
+  }
+  
+  /* Push actions (submit button) to the bottom of the form/card */
+  .form-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Ensure the contact-methods area does not stretch and the primary card layout remains sane */
+  .contact-methods {
+    flex: 0 0 auto;
+  }
+  
+  /* Optional: set a reasonable minimum card height for visual stability */
+  .contact-card,
+  .contact-form-card {
+    min-height: 420px; /* tweak value to taste */
+  }
+  
+  /* Make sure textarea has a consistent minimum height */
+  .form-group textarea {
+    min-height: 160px;
+  }
+  
 
 /* Contact Card */
 .contact-card {
@@ -87,7 +133,7 @@
 }
 
 .method-icon svg {
- 🔥 width: 48px;
+    width: 48px;
     height: 48px;
 }
 
