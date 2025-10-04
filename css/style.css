@@ -766,14 +766,14 @@ p {
 .footer-icon svg {
     width: 20px;
     height: 20px;
-    fill: var(--accent-green);
-    stroke: var(--accent-green);
+    fill: white;
+    stroke: white;
     transition: all 0.3s ease;
 }
 
 .footer-icon:hover svg {
-    fill: white;
-    stroke: white;
+    fill: var(--accent-green);
+    stroke: var(--accent-green);
 }
 
 .footer-bottom {
