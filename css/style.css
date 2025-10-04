@@ -145,17 +145,21 @@ p {
     align-items: center;
     height: 100%;
     flex: 1;
+    justify-content: space-between;
+    padding: 0 2rem;
 }
 
 .nav-item {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 0 24px;
+    padding: 0 16px;
     height: 100%;
     border-right: 1px solid rgba(255, 255, 255, 0.08);
     position: relative;
     transition: background-color 0.3s ease;
+    flex: 1;
+    justify-content: center;
 }
 
 .nav-item:hover {
@@ -164,6 +168,7 @@ p {
 
 .nav-item:last-child {
     border-right: none;
+    flex: 0.5;
 }
 
 .nav-link {
@@ -254,6 +259,8 @@ p {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         padding: 16px 24px;
         height: auto;
+        flex: none;
+        justify-content: flex-start;
     }
     
     .nav-cta.active {
@@ -505,6 +512,14 @@ p {
     
     .brand-text {
         font-size: 0.9rem;
+    }
+    
+    .nav-section {
+        padding: 0 1rem;
+    }
+    
+    .nav-item {
+        padding: 0 8px;
     }
     
     .hero-content {
